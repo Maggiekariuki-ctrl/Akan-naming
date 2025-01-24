@@ -13,6 +13,7 @@ Margaret Kariuki
 
 4.Click submit to see your Akan name.
 ## BDD (Behavior Driven Development)
+1.Input:
 
 
 
