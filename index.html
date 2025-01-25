@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akan name Finder</title>
+    <link rel="stylesheet" href="./css/style.css"  />  
+  </head>
+  <body>
+    <header>
+      <h1>AKAN NAME FINDER</h1>
+      <p>
+        Akan names are derived from Ghanian culture. Frequently in Ghana,
+        children are given their first name as a 'day name' which corresponds to
+        the day in the week they were born.
+      </p>
+    </header>
+    <main>
+      <form id="akanForm">
+        <label for="birthday">Enter Your Birthday:</label>
+        <input type="date" id="birthday" required />
+
+        <label for="gender">Select Your Gender:</label>
+        <select id="gender" required>
+          <option value="" disabled selected>Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+
+        <button type="submit">Get My Akan Name</button>
+      </form>
+      <div id="result"></div>
+    </main>
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>
