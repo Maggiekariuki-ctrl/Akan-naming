@@ -16,7 +16,11 @@ function getAkanName(day, month, year) {
   const result = (((CC / 4) - 2 * CC - 1) + ((5 * YY) / 4) + ((26 * (month + 1)) / 10) + day) % 7;
 
 
-  
+
 const isFemale = result % 2 === 0; // Even results are female names, odd are male
     return isFemale ? akanNames[result][0] : akanNames[result][1];
 }
+function isValidDate(day, month) {
+  if (month <= 0 || month > 12) return false;
+  if (day <= 0 || day > 31) return false;
+  
