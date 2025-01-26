@@ -32,6 +32,7 @@ Margaret Kariuki
 
 -JavaScript
 ## Contact Information
+Instagram:_.maggliy.
 
 ## License
 
