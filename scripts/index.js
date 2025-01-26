@@ -24,3 +24,11 @@ function isValidDate(day, month) {
   if (month <= 0 || month > 12) return false;
   if (day <= 0 || day > 31) return false;
   
+  document.getElementById('akanForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const day = parseInt(document.getElementById('day').value);
+  const month = parseInt(document.getElementById('month').value);
+  const year = parseInt(document.getElementById('year').value);
+  const gender = document.getElementById('gender').value;
+  
