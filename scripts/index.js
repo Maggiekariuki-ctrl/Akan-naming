@@ -31,4 +31,8 @@ function isValidDate(day, month) {
   const month = parseInt(document.getElementById('month').value);
   const year = parseInt(document.getElementById('year').value);
   const gender = document.getElementById('gender').value;
-  
+
+// Example 
+const day = 11; // Day of the month
+const month = 8; // August
+const year = 2000; // Year
