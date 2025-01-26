@@ -1,4 +1,4 @@
- Array akan names
+ //Array akan names
  const akanNames = [
   ["Akosua", "Kwasi"], // Sunday
   ["Adwoa", "Kwadwo"], // Monday
@@ -27,12 +27,16 @@ function isValidDate(day, month) {
   document.getElementById('akanForm').addEventListener('submit', function(e) {
   e.preventDefault();
   
-  const day = parseInt(document.getElementById('day').value);
-  const month = parseInt(document.getElementById('month').value);
-  const year = parseInt(document.getElementById('year').value);
-  const gender = document.getElementById('gender').value;
+
 
 // Example 
 const day = 11; // Day of the month
 const month = 8; // August
 const year = 2000; // Year
+  
+  
+
+
+ // The output will be the Akan name for this date
+const akanName = getAkanName(day, month, year);
+console.log(akanName)
