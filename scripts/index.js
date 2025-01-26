@@ -6,8 +6,8 @@ function getAkanName(year, month, day) {
   // Calculate the result using the formula
   const result =
     Math.floor(
-      CC / 4 - 2 * CC - 1 + (5 * YY) / 4 + (26 * (month + 1)) / 10 + day
-    ) % 7;
+     CC / 4 - 2 * CC - 1 + (5 * YY) / 4 + (26 * (month + 1)) / 10 + day
+   ) % 7;
 
   //  Akan names for males and females
   const maleNames = [
@@ -47,10 +47,7 @@ function getAkanName(year, month, day) {
   }
 }
 
-// Example usage
-const year = 1992;
-const month = 3; //March
-const day = 15;
+
 
 const akanNames = getAkanName(day, month, year);
 console.log(`Male Akan Name: ${akanNames.male}`);
