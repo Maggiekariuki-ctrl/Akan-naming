@@ -8,3 +8,7 @@
   ["Afia", "Kwame"], // Friday
   ["Ama", "Kwame"], // Saturday
 ];
+function getAkanName(day, month, year) {
+    // Extract century (CC) and year (YY)
+    const CC = Math.floor(year / 100);
+    const YY = year module 100;
